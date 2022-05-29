@@ -32,8 +32,8 @@ formOutput();
 function formOutput() {
     const savedOutput = JSON.parse(localStorage.getItem(STORAGE_KEY));
     if (savedOutput) {
-        refs.email.textContent = savedOutput.email;
-        refs.message.textContent = savedOutput.message;
+        refs.email.value = savedOutput.email;
+        refs.message.value = savedOutput.message;
     }
 }
 
